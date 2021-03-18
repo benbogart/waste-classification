@@ -130,16 +130,3 @@ This project could be improved by:
 
 The best performing model in this set of tests was the pre-trained Xception model.  Further improvement would likely be possible by fine tuning some of the layers of the original Xception model with a very small learning rate.  Overall the 91.1% accuracy was good, but not good enough to reach the level of purity needed for recycling.
 
-```
-git Repository Structure
-.
-├── 1_Data_Prep_and_Azure_Setup.ipynb
-├── 2_MLP_Azure.ipynb
-├── 3_CNN_Azure.ipynb
-├── 4_VGG16_Azure.ipynb
-├── 5_Xception_Azure.ipynb
-├── 7_Summary_of_Best_Model.ipynb
-├── images
-└── presentation_slides.pdf
-```
-
