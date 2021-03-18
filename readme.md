@@ -35,6 +35,19 @@ In order to decrease time per model iteration and for the ability to run models 
 
 Azure was chosen for Microsoft's commitment to the environment (they have pledged to remove the equivalent of all carbon the company has emitted since it began), and their support of small nonprofits with their Nonprofit Azure Grants.
 
+# Setup
+
+If you wish to run any of these notebooks these steps will get you setup.
+
+1) Download the data into the path ./data/raw in this repository structure
+
+2) Sign up for an [Azure account]([https://azure.microsoft.com/en-us/free/).  As of now they are offering $200 in free credits
+
+3) In order to use the GPU instances you must
+
+- convert your azure account to a pay as you go account.  Your free credit will remain active.  (This project cost me about $5 of the free credits to run including many failed modeling trials.)
+- Request provisioning of the NCPromo class compute engine with 6 cpu cores. 
+
 # Models
 
 The project compares the ability of the following following models to predict the class of the images
