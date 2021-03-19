@@ -23,6 +23,20 @@ def count_files(folder):
     return num
 
 def log_runs(runs, net_type='mlp'):
+    '''Adds the new runs to the the log files
+
+    Parameters
+    ----------
+    runs: a list of azure.core.Run objects
+
+    net_type: an abreviation that is used to identify the neural network type
+    and as suffix to the log file for keeping logs separate
+
+    Returns
+    -------
+    DataFrame of log file
+    '''
+
     import pandas as pd
     import os
     import pickle
@@ -40,6 +54,7 @@ def log_runs(runs, net_type='mlp'):
 
     # loop through runs and fill data
     for run in runs:
+
         runs_dict['id'].append(run.id)
         runs_dict['name'].append(run.properties['name'])
         runs_dict['type'].append(net_type)
@@ -90,6 +105,13 @@ def log_runs(runs, net_type='mlp'):
     return df
 
 def visualize_log(log):
+    '''Plots the Training and Validation Accuracy and Loss for each row of the
+    log
+
+    Parameters
+    ----------
+    log: DataFrame created by log_runs'''
+
     import matplotlib.pyplot as plt
 
     # for each row in the log DataFrame plot accuracy and loss
@@ -108,6 +130,12 @@ def visualize_log(log):
         plt.show()
 
 def plot_accuracy(log):
+    '''Plots the test_accuracy for all rows of the log
+
+        Parameters
+        ----------
+        log: DataFrame created by log_runs'''
+
     import matplotlib.pyplot as plt
 
     # plot the test accuracy and loss for all models in the log
@@ -123,6 +151,17 @@ def plot_accuracy(log):
     ax2.set_xlabel('Model Name')
 
 def get_runtime(run):
+    '''Calculates the duration of a azure.core.Run object
+
+    Paramters:
+    ----------
+    run: azure.core.Run object (should be a completed run)
+
+    Returns:
+    --------
+    datetime time delta indicating the total run time from start to end
+    '''
+    
     from datetime import datetime
 
     # fetch the run details
