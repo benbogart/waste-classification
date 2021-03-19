@@ -10,7 +10,7 @@ The project is an exploration of using deep neural networks for classification o
 
 # The Data
 
-The data for this project consists of 2272 images from research by [Mindy Yang](http://github.com/yangmindy4) and [Gary Thung](https://github.com/garythung/) for their paper [Classification of Trash for Recyclability Status](http://cs229.stanford.edu/proj2016/report/ThungYang-ClassificationOfTrashForRecyclabilityStatus-report.pdf).  The images can be downloaded in both their original size and the downsampled sizes [from this google dirve folder](https://drive.google.com/drive/folders/0B3P9oO5A3RvSUW9qTG11Ul83TEE) and are also available on [kaggle.](https://www.kaggle.com/asdasdasasdas/garbage-classification)
+The data for this project consists of 2527 images from research by [Mindy Yang](http://github.com/yangmindy4) and [Gary Thung](https://github.com/garythung/) for their paper [Classification of Trash for Recyclability Status](http://cs229.stanford.edu/proj2016/report/ThungYang-ClassificationOfTrashForRecyclabilityStatus-report.pdf).  The images can be downloaded in both their original size and the downsampled sizes [from this google dirve folder](https://drive.google.com/drive/folders/0B3P9oO5A3RvSUW9qTG11Ul83TEE) and are also available on [kaggle.](https://www.kaggle.com/asdasdasasdas/garbage-classification)
 
 The images  were taken with cell phones and are all downsampled to to 512 x 384px.  The data is divided into 6 categories shown here with the number of images in each category.
 
